@@ -95,13 +95,7 @@ int main(void)
 			blinky();
 		}
 	}// Loop forever;
-	initGPIO();
-	for(;;){
-		PA0Pressed = ((GPIOA -> IDR & GPIO_IDR_0)!=0);
-		if(PA0Pressed){
-			blinky();
-		}
-	}// Loop forever
+	
 
 
 }
